@@ -1,0 +1,77 @@
+
+1./clientes - GET - 200
+[{"Nombre":"Fran","Apellido":"Zuliani","doc":43,"email":"fr@gmail.com","id":5468}]
+
+2.
+URL - /clientes/:id - /clintes?id=:id
+Verbo - GET
+Parámetro - id
+Request - 
+Response -
+{
+"Nombre": "Mili",
+"Apellido": "Mansila",
+"doc": 43,
+"email":"mili@gmal.com",
+"id":56548,
+}
+http status - 200
+
+3. 
+URL - /clientes
+Verbo - POST
+Parámetro - 
+	{
+	"Nombre": "Juli",
+	"Apellido": "Mansila",
+	"doc": 43,
+	"email":"mili@gmal.com",
+	}
+Request - post
+Response - 
+	{
+	"Nombre": "Juli",
+	"Apellido": "Mansila",
+	"doc": 43,
+	"email":"mili@gmal.com",
+	"id":56548,
+	}
+http status - 201
+
+4.
+URL - /clientes
+Verbo - PUT
+Parámetro - (en el body del request)
+Request - 
+{"Nombre": "Mili",
+"Apellido": "Mansila",
+"doc": 43,
+"email":"miligros@gmal.com",
+"id":56548}
+Response -
+{
+"Nombre": "Mili",
+"Apellido": "Mansila",
+"doc": 43,
+"email":"milagros@gmal.com",
+"id":56548,
+}
+http status - 200
+
+5.
+URL - /clientes
+Verbo - DELETE
+Parámetro - id
+Request - 
+{
+"Nombre": "Mili",
+"Apellido": "Mansila",
+"doc": 43,
+"email":"milagros@gmal.com",
+"id":56548,
+}
+Response -
+{
+"Cliente con id:56548 eliminado"
+}
+http status - 200

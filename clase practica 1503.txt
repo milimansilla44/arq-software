@@ -1,0 +1,41 @@
+introduccion a git:
+	github plataforma que aloa repositorios y git es la tecnologia 
+	. herramienta para trabajar en equipo
+	. diseñado por linus
+caracteristicas de git:
+	- apollo al desarrollo no lineal
+	- branching model:Es un método bastante sencillo y visual, pero, como los propios autores apuntan,
+ 	pierde su simplicidad cuando hay que trabajar con releases, puesto que está diseñado para websites 
+	servidos por una única aplicación, y en general necesitará de mecanismos adicionales para garantizar 
+	la consistencia entre ramas
+	
+Introduccion a GO
+	go.dev/play
+	el fmt es como el std, no hace falta instertar los ; al final de cada linea
+	caracteristicas: https://www.oscarblancarteblog.com/2017/03/29/concurrencia-vs-paralelismo/
+	
+ejercicio 1- 
+package main
+
+import "fmt"
+
+type Persona struct {
+	nombre string
+	edad   int
+}
+
+func (p Persona) Mostrar() {
+	fmt.Println(p)
+}
+
+func main() {
+
+	var p Persona
+	p.nombre = "mili"
+	p.edad = 20
+
+	p.Mostrar()
+}
+
+{mili 20}
+	

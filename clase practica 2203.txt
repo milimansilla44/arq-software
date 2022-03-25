@@ -1,0 +1,36 @@
+las apis tienen disponible docs donde se especifica como interactuar con ellas para enviar y recibir datos 
+para consumir las apis necesitamos conocer 
+- el metodo HTTP(get,post)
+- las url que estan conformadas por
+	-base url: es la ruta basicca a partir del cual se forman todos los endopointa disponibles para consumir
+	ej: https://api.mercadolibre.com/
+	-endpointses el path dentro de la api para acceder al recurso solicitaso
+	ej: /sites/MLA/categories
+	-parametros:
+- el cuerpo del mensaje llamado body
+- las cabeceras del mensaje llamadas headers
+___
+el paquete http nos permite realizar peticiones y procesar los datos correspondientes a una solicitud http, ade,as
+de contar con variables constantes y funciones d¿utiles en este procesamiento. para utilizarlo debemos
+importar el paquete http
+	import "net/http"
+invocar la funcion correspondiente mediante http metodos basicos
+	get resp:= http.get(url)
+	post resp:= http.post(url, )
+
+una vez obtenidos los bytes debemos crear una variable del tipo de dato que estamos esperando recibir
+	var myVar myStruct
+ahra debemos asociar toda la informacion contenida en el cuerpo del mensaje con nuestra esctructura. para esto
+debemos tener en cuenta las anotaciones especificadas 
+
+_____
+el paquete ENCODING/JSON nos disponibiliza un gran numero de funciones y utiles para trabajar con daros en formato
+json.
+para consumir una api debemos desplegar o asociar datos obtenidos en una variable
+
+
+libreias: "fmt", "errors", "net/http"  "ioutil" "encoding/json"
+
+pkg.go.dev/net/http
+
+https://api.mercadolibre.com/sites/MLA/search?q=Motorola
